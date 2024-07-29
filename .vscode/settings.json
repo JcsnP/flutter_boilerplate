@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.mouseWheelZoom": true,
+  "dart.lineLength": 120,
+    "[dart]": {
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "editor.detectIndentation": false,
+      "editor.suggest.insertMode": "replace",
+      "editor.defaultFormatter": "Dart-Code.dart-code",
+      "editor.inlayHints.enabled": "offUnlessPressed",
+      "editor.rulers": [
+        150,
+      ]
+    }
+}

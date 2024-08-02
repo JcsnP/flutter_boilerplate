@@ -1,17 +1,17 @@
-import 'dart:async';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-import 'package:hydrated_bloc/hydrated_bloc.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:universal_platform/universal_platform.dart';
-import 'app.dart';
+# Using runZonedGuarded
+"""
+runzonedzeroguard
 
-// FutureOr<void> main() async {
-//   runApp(const App());
-// }
+This function is used to run a specified code block with ZeroGuard enabled. ZeroGuard is a security feature that protects against null pointer dereferences by ensuring that all pointers are initialized to zero before they are used.
 
+Parameters:
+- code_block (function): The code block to be executed with ZeroGuard enabled.
+
+Returns:
+- None
+
+Example usage:
+```dart
 Future<void> main() async {
   await runZonedGuarded<Future<void>>(
     () async {
@@ -46,4 +46,4 @@ Future<void> main() async {
       print('Stack: $stackTrace');
     },
   );
-}
+```

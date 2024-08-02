@@ -17,8 +17,8 @@ flavors:
 
   prod:
     app:
-      name: "Flutter Boilerplate-prod"
+      name: "Flutter Boilerplate"
     android:
-      applicationId: "jcsnp.flutter_boilerplate.prod"
+      applicationId: "jcsnp.flutter_boilerplate"
     # ios:
-    #   bundleId: "jcsnp.flutter_boilerplate.prod"
+    #   bundleId: "jcsnp.flutter_boilerplate"

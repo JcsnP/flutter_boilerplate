@@ -1,10 +1,6 @@
-import 'package:flex_color_scheme/flex_color_scheme.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/constants/app_theme.dart';
-import 'package:flutter_boilerplate/features/home/presentation/screens/home_screen.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+# Locale
 
+```dart
 class App extends StatefulWidget {
   const App({super.key});
 
@@ -59,3 +55,4 @@ class _AppViewState extends State<AppView> {
     );
   }
 }
+```

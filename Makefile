@@ -17,16 +17,16 @@ build_i18n:
 	flutter gen-l10n
 
 run_dev:
-	flutter run --flavor dev -t lib/main_dev.dart;
+	flutter run --flavor dev -t lib/main_dev.dart --dart-define-from-file=env/.dev.env
 
 run_beta:
-	flutter run --flavor beta -t lib/main_beta.dart;
+	flutter run --flavor beta -t lib/main_beta.dart --dart-define-from-file=env/.beta.env
 
 run_prod:
-	flutter run --flavor prod -t lib/main_prod.dart;
+	flutter run --flavor prod -t lib/main_prod.dart --dart-define-from-file=env/.prod.env
 
 android_beta:
-	flutter build appbundle --flavor beta -t lib/main_beta.dart
+	flutter build appbundle --flavor beta -t lib/main_beta.dart --dart-define-from-file=env/.beta.env
 
 android_prod:
-	flutter build appbundle --flavor prod -t lib/main_prod.dart
+	flutter build appbundle --flavor prod -t lib/main_prod.dart --dart-define-from-file=env/.prod.env

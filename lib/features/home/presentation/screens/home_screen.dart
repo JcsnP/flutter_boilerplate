@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_boilerplate/flavors.dart';
+import 'package:flutter_boilerplate/utils/env.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,8 +14,13 @@ class HomeScreen extends StatelessWidget {
         title: Text(F.title),
       ),
       body: Center(
-        child: Text(
-          'Hello ${t!.appTitle}',
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('Hello ${t!.appTitle}'),
+            Text('Env =  ${Env.env}'),
+          ],
         ),
       ),
     );

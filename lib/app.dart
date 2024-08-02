@@ -42,15 +42,16 @@ class _AppViewState extends State<AppView> {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [Locale('en'), Locale('th')],
+      locale: const Locale('en'),
       // Set locale depends on device locale
-      localeResolutionCallback: (locale, supportedLocales) {
-        for (var supportedLocale in supportedLocales) {
-          if (supportedLocale.languageCode == locale?.languageCode) {
-            return supportedLocale;
-          }
-        }
-        return supportedLocales.first;
-      },
+      // localeResolutionCallback: (locale, supportedLocales) {
+      //   for (var supportedLocale in supportedLocales) {
+      //     if (supportedLocale.languageCode == locale?.languageCode) {
+      //       return supportedLocale;
+      //     }
+      //   }
+      //   return supportedLocales.first;
+      // },
       theme: FlexThemeData.light(colors: AppTheme.flexSchemeData.light, fontFamily: 'Poppins'),
       darkTheme: FlexThemeData.light(colors: AppTheme.flexSchemeData.dark, fontFamily: 'Poppins'),
       themeMode: ThemeMode.system,
